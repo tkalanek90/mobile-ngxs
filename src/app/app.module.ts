@@ -5,15 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NgxsModule } from '@ngxs/store';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     NgxsModule.forRoot([PlatformState]),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

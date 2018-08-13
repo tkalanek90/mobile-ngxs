@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { PlatformService } from '../store/platform/platform.service';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-root',
